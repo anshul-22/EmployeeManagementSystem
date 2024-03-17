@@ -31,7 +31,7 @@ Project: Represents projects assigned to employees, with attributes like name, d
 
 Department: Represents organizational departments, storing details such as name, location, etc.
 
-Attendance: Tracks employee attendance records, including timestamps, attendance status, etc.
+Attendance: Tracks employee attendance records, including presentDays, absentDays, etc.
 
 Salary: Stores salary information for employees, including salary amount, payment date, etc.
 
