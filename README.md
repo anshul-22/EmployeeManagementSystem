@@ -22,11 +22,17 @@ Implements business logic, data validation, and application flow control using J
 Leverages Hibernate for CRUD operations on entities, ensuring consistency and reliability.
 
 3.Entities:
+
 Employee: Represents individual employees, storing details such as name, contact information, department, etc.
+
 Manager: Represents managers overseeing employees, with attributes including name, department, etc.
+
 Project: Represents projects assigned to employees, with attributes like name, description, start date, end date, etc.
+
 Department: Represents organizational departments, storing details such as name, location, etc.
+
 Attendance: Tracks employee attendance records, including timestamps, attendance status, etc.
+
 Salary: Stores salary information for employees, including salary amount, payment date, etc.
 
 4.CRUD Operations:
