@@ -1,14 +1,14 @@
 # EmployeeManagementSystem
 Employee Management System built using Java, Hibernate and MySql.
 
-A Java-based Employee Management System (EMS) project using MySQL as the backend database is a comprehensive solution for managing various aspects of employee data and processes within an organization. 
+##A Java-based Employee Management System (EMS) project using MySQL as the backend database is a comprehensive solution for managing various aspects of employee data and processes within an organization. 
 
 Project Overview:
 The Employee Management System is a console-based application developed using Java for the backend logic
 and MySQL for data storage. 
 It provides functionalities for HR administrators, managers, and employees to manage employee-related information efficiently.
 
-Details:-
+##Details:-
 
 1.Database Management:
 Utilizes MySQL as the RDBMS to store data for six entities: Employee, Manager, Project, Department, Attendance, and Salary.
@@ -23,17 +23,17 @@ Leverages Hibernate for CRUD operations on entities, ensuring consistency and re
 
 3.Entities:
 
-Employee: Represents individual employees, storing details such as name, contact information, department, etc.
+-Employee: Represents individual employees, storing details such as name, contact information, department, etc.
 
-Manager: Represents managers overseeing employees, with attributes including name, department, etc.
+-Manager: Represents managers overseeing employees, with attributes including name, department, etc.
 
-Project: Represents projects assigned to employees, with attributes like name, description, start date, end date, etc.
+-Project: Represents projects assigned to employees, with attributes like name, description, start date, end date, etc.
 
-Department: Represents organizational departments, storing details such as name, location, etc.
+-Department: Represents organizational departments, storing details such as name, location, etc.
 
-Attendance: Tracks employee attendance records, including presentDays, absentDays, etc.
+-Attendance: Tracks employee attendance records, including presentDays, absentDays, etc.
 
-Salary: Stores salary information for employees, including salary amount, payment date, etc.
+-Salary: Stores salary information for employees, including salary amount, payment date, etc.
 
 4.CRUD Operations:
 Supports CRUD operations for all entities, enabling the creation, retrieval, updating, and deletion of records.
