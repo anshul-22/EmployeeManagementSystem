@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<!-- Main configuration file -->
+<hibernate-configuration>
+	<session-factory>
+		<!-- As we are connecting MySQL, com.mysql.jdbc. 
+             Driver is required(JDBC driver class) -->
+		<property name="hibernate.connection.driver_class">
+			com.mysql.cj.jdbc.Driver</property>
+
+		<!-- Here ems is the name of the database  
+             that we are connecting(JDBC URL) -->
+		<property name="hibernate.connection.url">
+			jdbc:mysql://localhost:3306/ems</property>
+
+		<!-- Username to connect to MySQL -->
+		<property name="hibernate.connection.username">root</property>
+
+		<!-- Password to connect to MySQL, Provide your correct password -->
+		<property name="hibernate.connection.password">root</property>
+		<!-- Echo all executed SQL to stdout -->
+		<property name="hibernate.show_sql">false</property>
+		<!-- Dialect required between hibernate and MySQL -->
+		
+
+
+		<!-- This property makes Hibernate generate the 
+              appropriate SQL for MySQL here -->
+		<property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+		<property name="hbm2ddl.auto">update </property>
+		<mapping class="com.ems.entities.Employee" />
+		<mapping class="com.ems.entities.Attendance" />
+		<mapping class="com.ems.entities.Salary" />
+		<mapping class="com.ems.entities.Project" />
+		<mapping class="com.ems.entities.Manager" />
+		<mapping class="com.ems.entities.Department" />
+		
+		<mapping class="com.ems.customexceptions.InvalidNumberException" />
+		
+		<mapping class="com.ems.app.App" />
+
+	</session-factory>
+</hibernate-configuration>
