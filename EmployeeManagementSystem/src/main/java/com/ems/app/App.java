@@ -15,7 +15,6 @@ public class App {
     
     // Method to print the options menu
     public static void printOptions() {
-        System.out.println("------------------------------------");
         System.out.println("Select an option:");
         System.out.println("1. Manage Employees");
         System.out.println("2. Manage Departments");
@@ -24,7 +23,6 @@ public class App {
         System.out.println("5. Manage Attendance");
         System.out.println("6. Manage Salaries");
         System.out.println("0. Exit");
-
         System.out.println("------------------------------------");
     }
     
@@ -32,6 +30,7 @@ public class App {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
             System.out.println("------------------------------------");
             System.out.println("-----Employee Management System-----");
+            System.out.println("------------------------------------");
             int i=0;
             while (true) {
                 printOptions();
