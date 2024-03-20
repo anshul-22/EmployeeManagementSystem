@@ -1,4 +1,4 @@
-# EmployeeManagementSystem
+# Employee Management System
 Employee Management System built using Java, Hibernate and MySql.
 
 A Java-based Employee Management System (EMS) project using MySQL as the backend database is a comprehensive solution for managing various aspects of employee data and processes within an organization. 
