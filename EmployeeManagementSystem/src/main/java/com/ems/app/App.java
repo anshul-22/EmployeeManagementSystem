@@ -12,9 +12,12 @@ import com.ems.operations.ProjectOperations;
 import com.ems.operations.SalaryOperations;
 
 public class App {
+	
+	private static int i=0;
     
     // Method to print the options menu
     public static void printOptions() {
+        
         System.out.println("Select an option:");
         System.out.println("1. Manage Employees");
         System.out.println("2. Manage Departments");
@@ -23,22 +26,28 @@ public class App {
         System.out.println("5. Manage Attendance");
         System.out.println("6. Manage Salaries");
         System.out.println("0. Exit");
+
         System.out.println("------------------------------------");
     }
     
     public static void main(String[] args) throws InvalidNumberException {
         try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
-            System.out.println("------------------------------------");
+        	System.out.println("------------------------------------");
             System.out.println("-----Employee Management System-----");
             System.out.println("------------------------------------");
-            int i=0;
+            
             while (true) {
                 printOptions();
+               
                 int choice;
                 try {
                     // Read user choice from input
                     choice = Integer.parseInt(br.readLine());
                     // Switch based on user choice
+                    while(i<1) {
+                    	System.out.println("Connecting to Database....");
+                    	i++;
+                    }
                     switch (choice) {
                         case 1:
                             // Call method to manage employees
